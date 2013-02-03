@@ -1,1 +1,2 @@
-*.pyc
+# clooj leaves temp files
+*~
