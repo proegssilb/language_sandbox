@@ -2,17 +2,35 @@
 The Language Sandbox
 --------------------
 
-Pretty much, this is my way of learning functional paradigms. Build something that isn't too hard for me to pull off in Python, and attempt to write it as best I can in one or two functional languages. I will try to follow the idioms as best I can, please post pull requests and leave comments if you're bored and are good at Haskell or Erlang.
+This is the Erlang portion of Droogans' Language Sandbox. Consider this repo an
+excuse to get hands-on experience with Erlang before I do something significant
+with it.
 
-There are two text files containing words of the English language included in the root of the repository as encouragement to utilize them in your problem ideas.
+Contents
+--------
 
-Guidelines
+### Rosalind ###
+A collection of problems from http://rosalind.info/ . Most involve string
+processing in some way, but many also involve other mathematical concepts
+(such as graphs).
+
+Conventions
 ----------
 
-1. Please make a fork for your language to put your work on if you plan on doing a pull request.
-2. Entries that include unit tests are always a good idea.
-3. All entries should follow the tenets of good style for their language.
-4. Clarity is more important than speed or efficiency.
+1. Trivial cases may not be runnable as a program. Many Erlang examples are
+like this.
 
-> Although you may include more elegant entries alongside a clear example.
+2. If I decide to make something runnable, it will be via the main() function.
+
+3. If a module ends in "lib", it is intended as a library.
+
+4. Erlang is not typically a fast language. The programs herein will not be
+written for speed. They will either be written for comprehendability,
+convenience, or to demonstrate a particular language feature.
+
+5. Lists of characters are to be avoided in favor of either bitstrings or
+a string library datatype.
+
+6. If unit testing is included, it will be a "test" function containing a 
+series of pattern-matching equalities, ie expectedRV = function(arg1, ...)
 
