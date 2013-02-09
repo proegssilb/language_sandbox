@@ -1,3 +1,4 @@
-#Erlang stuff
-*.beam
-*.dump
+#Haskell outputs
+*.exe
+*.o
+*.hi
